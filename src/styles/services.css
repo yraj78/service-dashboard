@@ -1,0 +1,28 @@
+
+#assignment {
+  margin: 4rem;
+  height: 29rem;
+  width: 77rem;
+}
+
+.clip-triangle-bottom-left {
+  clip-path: polygon(8% 100%, 100% 100%, 100% -12%);
+}
+
+.clip-triangle-top-right {
+  clip-path: polygon(0 0, 0 118%, 90% 0);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.hover\:rotate-360:hover {
+  animation: rotate 1.5s forwards; 
+}
